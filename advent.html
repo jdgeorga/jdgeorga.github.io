@@ -9,10 +9,32 @@
 </head>
 <body>
     <header>
-        <h1>Advent</h1>
+        <table class="header">
+            <tr>
+                <td colspan="2" rowspan="2" class="width-auto">
+                    <h1 class="title">Advent</h1>
+                    <span class="subtitle">A season of waiting.</span>
+                </td>
+                <th>Version</th>
+                <td class="width-min">v1.0.0</td>
+            </tr>
+            <tr>
+                <th>Updated</th>
+                <td class="width-min"><time style="white-space: pre;">2024-01-01</time></td>
+            </tr>
+            <tr>
+                <th class="width-min">Author</th>
+                <td class="width-auto">Johnathan Georgaras</td>
+                <th class="width-min">License</th>
+                <td>MIT</td>
+            </tr>
+        </table>
     </header>
+    <label class="debug-toggle-label"><input type="checkbox" class="debug-toggle" /> Debug mode</label>
     <main>
         <p>Content for Advent.</p>
     </main>
+    <div class="debug-grid"></div>
+    <script src="index.js"></script>
 </body>
 </html> 
